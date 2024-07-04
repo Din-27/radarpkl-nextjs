@@ -25,7 +25,7 @@ export default function Body({
         <div>
           <div className="container md:mx-auto">
             {/* banner 1 */}
-            <BannerIklan src={require('../../public/iklan_banner_satu.webp')} />
+            <BannerIklan src={require('../../public/iklan_banner_satu.webp')} priority />
             {/* banner 2 */}
             <BannerIklan src={require('../../public/iklan_banner_dua.webp')} />
             <div className="flex justify-center p-5 sm:flex-col">
@@ -37,7 +37,7 @@ export default function Body({
                   {data.map((data) => (
                     <div className="flex p-4 sm:py-4" key={data.id}>
                       <Image
-                        quality={30}
+                        // quality={30}
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
