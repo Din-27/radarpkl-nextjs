@@ -35,7 +35,7 @@ export default function CatatanDisway() {
           height={40}
           quality={20}
           alt="disway"
-          priority={true}
+          loading="eager"
         />
         <p className="text-white self-center">CATATAN DAHLAN ISKAN</p>
       </span>
