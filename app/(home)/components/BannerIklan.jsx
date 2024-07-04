@@ -11,6 +11,7 @@ export default function BannerIklan({ src }) {
         fetchPriority="high"
         priority
         loading="eager"
+        layout="responsive"
       />
     </div>
   );
