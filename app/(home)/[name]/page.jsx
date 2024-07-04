@@ -39,7 +39,7 @@ export default function page() {
             }
         }
     }
-console.log(data);
+
     const handleNext = () => {
         setPage(page + 1);
     };
