@@ -70,7 +70,7 @@ export default function EditPage() {
     console.log(image);
     const { data, error } = await supabase.storage
       .from("news-image")
-      .upload(`/${image.name}`, await ImageConvert(image), {
+      .upload(`/${image.name}`, await ImageConvert(image) !== null && await ImageConvert(image), {
         contentType: 'image/webp',
         cacheControl: "3600",
         upsert: false,
