@@ -37,12 +37,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link rel="preload" href="../../public/iklan_banner_satu.webp" as="image" />
-        <link rel="preload" href="  ../../public/iklan_banner_dua.webp" as="image" />
-        <link rel="preload" href="  ../../public/BANNER_DPRD_KOTA.webp" as="image" />
-        <link rel="preload" href="  ../../public//BANNER_BATANG" as="image" />
-      </Head>
       <Body
         data={dataBerita}
         setPage={setPage}
