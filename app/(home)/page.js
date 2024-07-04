@@ -2,6 +2,7 @@
 import { Suspense, useEffect, useState } from "react";
 import Body from "./Body";
 import supabase from "../config/supabaseConfig";
+import Head from "next/head";
 
 const ITEMS_PER_PAGE = 6; // Number of items per page
 
@@ -36,6 +37,12 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <link rel="preload" href="../../public/iklan_banner_satu.webp" as="image" />
+        <link rel="preload" href="  ../../public/iklan_banner_dua.webp" as="image" />
+        <link rel="preload" href="  ../../public/BANNER_DPRD_KOTA.webp" as="image" />
+        <link rel="preload" href="  ../../public//BANNER_BATANG" as="image" />
+      </Head>
       <Body
         data={dataBerita}
         setPage={setPage}
