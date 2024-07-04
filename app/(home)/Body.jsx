@@ -25,16 +25,15 @@ export default function Body({
         <div>
           <div className="container md:mx-auto">
             {/* banner 1 */}
-            <BannerIklan src={"/iklan_banner_satu.webp"} />
+            <BannerIklan src={require('../../public/iklan_banner_satu.webp')} />
             {/* banner 2 */}
-            <BannerIklan src={"/iklan_banner_dua.webp"} />
+            <BannerIklan src={require('../../public/iklan_banner_dua.webp')} />
             <div className="flex justify-center p-5 sm:flex-col">
               <div>
                 <Carousel />
                 <div className="h-full ">
-                  <h1 className="text-lg font-bold">{`${
-                    title ? title : "Berita Terkini"
-                  }`}</h1>
+                  <h1 className="text-lg font-bold">{`${title ? title : "Berita Terkini"
+                    }`}</h1>
                   {data.map((data) => (
                     <div className="flex p-4 sm:py-4" key={data.id}>
                       <Image
@@ -64,7 +63,7 @@ export default function Body({
                     </div>
                   ))}
                   <div className="flex justify-center w-full md:p-4">
-                    <BannerIklan src={"/BANNER_DPRD_KOTA.webp"} />
+                    <BannerIklan src={require('../../public/BANNER_DPRD_KOTA.webp')} />
                   </div>
                   <div>
                     <div className="h-full ">
@@ -97,7 +96,7 @@ export default function Body({
                         </div>
                       ))}
                       <div className="flex justify-center w-full md:p-4">
-                        <BannerIklan src={"/BANNER_BATANG.webp"} />
+                        <BannerIklan src={require('../../public//BANNER_BATANG.webp')} />
                       </div>
                     </div>
                   </div>
