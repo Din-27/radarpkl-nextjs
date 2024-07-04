@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import SidebarDashboard from "../../components/SidebarDashboard";
 import { useEffect, useState } from "react";
 import supabase from "@/app/config/supabaseConfig";
+import { ImageConvert } from "@/app/fetch/ImageConvert";
 
 export default function EditPage() {
   const [Judul, setJudul] = useState("");
@@ -69,7 +70,8 @@ export default function EditPage() {
     console.log(image);
     const { data, error } = await supabase.storage
       .from("news-image")
-      .upload(`/${image.name}`, image, {
+      .upload(`/${image.name}`, await ImageConvert(image), {
+        contentType: 'image/webp',
         cacheControl: "3600",
         upsert: false,
       });
