@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-export default function BannerIklan({ src }) {
+export default function BannerIklan({ src, props }) {
   return (
     <div className="flex justify-center w-full md:p-4">
       <Image
+        {...props}
         src={src}
-        width={1200}
+        width={src.width}
         height={800}
-        quality={10}
         alt="iklan honda"
-        priority
       />
     </div>
   );
