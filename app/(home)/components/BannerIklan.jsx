@@ -10,6 +10,7 @@ export default function BannerIklan({ src }) {
         quality={10}
         alt="iklan honda"
         priority
+        loading="lazy"
       />
     </div>
   );
