@@ -32,7 +32,7 @@ export default function Navbar() {
             width={250}
             height={250}
             alt="Radar Pekalongan Logo 1"
-            priority={true}
+            loading="eager"
           />
         </Link>
       </div>
