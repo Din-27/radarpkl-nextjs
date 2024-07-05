@@ -10,6 +10,7 @@ export default function page() {
     const searchParams = useSearchParams();
     const newParams = searchParams.get("search");
     const [data, setData] = useState(null);
+    const [page, setPage] = useState(1);
 
     async function getData() {
 
@@ -37,7 +38,7 @@ export default function page() {
 
     useEffect(() => {
         getData()
-    }, [newParams, data]);
+    }, [newParams, page]);
 
     return (
         <>

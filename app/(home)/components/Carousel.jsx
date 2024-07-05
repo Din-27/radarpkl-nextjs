@@ -13,24 +13,25 @@ const dataImageCarousel = [
 export default function Carousel() {
   const [index, setIndex] = useState(0)
   const nextHandler = () => setIndex(index === (dataImageCarousel.length - 1) ? 0 : index + 1)
-  const prevHandler = () => setIndex(index > 0 ? index - 1 : dataImageCarousel.length)
-  console.log(index === (dataImageCarousel.length - 1));
+  const prevHandler = () => setIndex(index > 0 ? index - 1 : (dataImageCarousel.length - 1))
+
   return (
     <div
       id="default-carousel"
-      className="relative w-full"
+      className="relative w-full px-2"
       data-carousel="slide"
     >
 
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div className="duration-700 ease-in-out" data-carousel-item>
-          <Image
+          <div className="w-full lg:h-64 h-24 mt-1 bg-white p-4"><h1 className="text-black text-center flex items-center text-xl">Ini Iklan {index + 1}</h1></div>
+          {/* <Image
             width={dataImageCarousel[index].width}
             height={dataImageCarousel[index].height}
             src={dataImageCarousel[index]}
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
-          />
+          /> */}
         </div>
       </div>
 

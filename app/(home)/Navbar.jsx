@@ -28,6 +28,7 @@ export default function Navbar() {
       <div className="w-1/6 h-fit sm:hidden">
         <Link href="/">
           <Image
+          priority
             src="/Logo Radar Pekalongan 1.webp"
             width={250}
             height={250}
