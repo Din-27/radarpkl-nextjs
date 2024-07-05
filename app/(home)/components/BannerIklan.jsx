@@ -11,7 +11,6 @@ export default function BannerIklan({ src }) {
         fetchPriority="high"
         priority
         loading="eager"
-        layout="responsive"
         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="w-screen"
       />
