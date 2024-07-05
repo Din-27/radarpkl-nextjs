@@ -5,7 +5,7 @@ export default function BannerIklan({ src }) {
     <div className="flex justify-center w-full md:p-4">
       <Image
         src={src}
-        width={src.width}
+        width={1200}
         height={800}
         alt="iklan honda"
         fetchPriority="high"
