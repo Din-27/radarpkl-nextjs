@@ -18,14 +18,16 @@ const dataLink = [
 
 export default function Category() {
   return (
-    <ul className="flex space-x-4 justify-evenly items-center bg-slate-500 overflow-x-auto p-2 w-full text-white">
-      {dataLink.map((x, y) =>
-        <Link href={`/${x}`} key={y}>
-          <li className="w-20">
-            {x}
-          </li>
-        </Link>
-      )}
-    </ul>
+    <nav className="flex justify-center bg-slate-500 !overflow-auto ">
+      <ul className="flex justify-evenly !sm:overflow-auto p-2 w-fit text-white">
+        {dataLink.map((x, y) =>
+          <Link href={`/${x}`} key={y}>
+            <li className="px-2">
+              {x}
+            </li>
+          </Link>
+        )}
+      </ul>
+    </nav>
   );
 }

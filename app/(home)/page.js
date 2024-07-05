@@ -2,9 +2,8 @@
 import { Suspense, useEffect, useState } from "react";
 import Body from "./Body";
 import supabase from "../config/supabaseConfig";
-import Head from "next/head";
 
-const ITEMS_PER_PAGE = 6; // Number of items per page
+const ITEMS_PER_PAGE = 24
 
 export default function Home() {
   const [dataBerita, setData] = useState(null);
@@ -22,18 +21,9 @@ export default function Home() {
       .select()
       .range(from, to)
       .order("id", { ascending: false });
+
     setData(data);
   }
-
-  const handleNext = () => {
-    setPage(page + 1);
-  };
-
-  const handlePrevious = () => {
-    if (page > 1) {
-      setPage(page - 1);
-    }
-  };
 
   return (
     <>
@@ -42,8 +32,6 @@ export default function Home() {
         setPage={setPage}
         page={page}
         getData={getData}
-        handleNext={handleNext}
-        handlePrevious={handlePrevious}
       />
     </>
   );

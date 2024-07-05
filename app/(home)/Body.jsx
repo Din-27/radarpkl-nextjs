@@ -9,15 +9,11 @@ import BannerIklan from "./components/BannerIklan";
 import CatatanDisway from "./components/CatatanDisway";
 import Terpopuler from "./components/Terpopuler";
 import VideoSection from "./components/VideoSection";
+import BannerSatu from '../../public/iklan_banner_satu.webp'
 
 export default function Body({
   title,
   data,
-  // setPage,
-  // page,
-  // getData,
-  // handleNext,
-  // handlePrevious,
 }) {
   return (
     <>
@@ -25,7 +21,7 @@ export default function Body({
         <div>
           <div className="lg:container md:mx-auto">
             {/* banner 1 */}
-            <BannerIklan src={require('../../public/iklan_banner_satu.webp')} />
+            <BannerIklan src={BannerSatu} />
             {/* banner 2 */}
             <BannerIklan src='iklan_banner_dua' />
             <div className="flex justify-center p-5 sm:flex-col">
@@ -40,8 +36,6 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
-                        srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
-                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -52,7 +46,7 @@ export default function Body({
                         >
                           {data.Judul}
                         </Link>
-                        <span className="flex items-center">
+                        <span className="flex datas-center">
                           <p className="sm:text-xs text-white uppercase font-bold bg-red-500 w-fit p-2 rounded-lg">
                             {data.Kategori}
                           </p>
@@ -75,8 +69,6 @@ export default function Body({
                             width={150}
                             height={150}
                             src={data.ImageURL ? data.ImageURL : ""}
-                            srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             alt=""
                             className="min-w-40 sm:min-w-28 pr-4 "
                           />
@@ -87,7 +79,7 @@ export default function Body({
                             >
                               {data.Judul}
                             </Link>
-                            <span className="flex items-center">
+                            <span className="flex datas-center">
                               <p className="sm:text-xs text-white uppercase font-bold bg-red-500 w-fit p-2 rounded-lg">
                                 {data.Kategori}
                               </p>
@@ -126,7 +118,6 @@ export default function Body({
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
                         srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
-                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -137,7 +128,7 @@ export default function Body({
                         >
                           {data.Judul}
                         </Link>
-                        <span className="flex items-center">
+                        <span className="flex datas-center">
                           <p className="sm:text-xs text-white uppercase font-bold bg-red-500 w-fit p-2 rounded-lg">
                             {data.Kategori}
                           </p>
@@ -181,7 +172,6 @@ export default function Body({
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
                         srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
-                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -192,7 +182,7 @@ export default function Body({
                         >
                           {data.Judul}
                         </Link>
-                        <span className="flex items-center">
+                        <span className="flex datas-center">
                           <p className="sm:text-xs text-white uppercase font-bold bg-red-500 w-fit p-2 rounded-lg">
                             {data.Kategori}
                           </p>
@@ -226,7 +216,6 @@ export default function Body({
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
                         srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
-                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -237,7 +226,7 @@ export default function Body({
                         >
                           {data.Judul}
                         </Link>
-                        <span className="flex items-center">
+                        <span className="flex datas-center">
                           <p className="sm:text-xs text-white uppercase font-bold bg-red-500 w-fit p-2 rounded-lg">
                             {data.Kategori}
                           </p>

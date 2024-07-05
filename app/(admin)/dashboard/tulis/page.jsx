@@ -3,7 +3,6 @@
 import { useState } from "react";
 import SidebarDashboard from "../components/SidebarDashboard";
 import supabase from "@/app/config/supabaseConfig";
-import { ImageConvert } from "@/app/fetch/ImageConvert";
 
 export default function TulisPage() {
   const [Judul, setJudul] = useState("");

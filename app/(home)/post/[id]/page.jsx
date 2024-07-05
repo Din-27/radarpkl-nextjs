@@ -52,7 +52,7 @@ export default function PagePost() {
                 quality={50}
                 width={500}
                 height={500}
-                src={dataBerita.ImageURL}
+                src={dataBerita?.ImageURL || ''}
                 alt=""
                 className="h-fit rounded-lg mb-10"
               />
@@ -67,7 +67,7 @@ export default function PagePost() {
                   quality={30}
                   width={150}
                   height={150}
-                  src={dataBerita.ImageURL_2 ? dataBerita.ImageURL_2 : ""}
+                  src={dataBerita?.ImageURL_2 || ""}
                   alt=""
                   className="w-40 sm:w-28 pr-4 h-fit"
                 />
