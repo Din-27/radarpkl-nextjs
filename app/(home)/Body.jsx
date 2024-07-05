@@ -40,7 +40,7 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
-                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
@@ -75,7 +75,7 @@ export default function Body({
                             width={150}
                             height={150}
                             src={data.ImageURL ? data.ImageURL : ""}
-                            srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                            srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
                             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             alt=""
                             className="min-w-40 sm:min-w-28 pr-4 "
@@ -125,7 +125,7 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
-                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
@@ -180,7 +180,7 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
-                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
@@ -225,7 +225,7 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
-                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        srcSet={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "

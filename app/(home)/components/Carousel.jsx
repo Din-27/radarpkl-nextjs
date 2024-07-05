@@ -12,9 +12,9 @@ const dataImageCarousel = [
 
 export default function Carousel() {
   const [index, setIndex] = useState(0)
-  const nextHandler = () => setIndex(index === dataImageCarousel.length ? 0 : index + 1)
+  const nextHandler = () => setIndex(index === (dataImageCarousel.length - 1) ? 0 : index + 1)
   const prevHandler = () => setIndex(index > 0 ? index - 1 : dataImageCarousel.length)
-  console.log(index);
+  console.log(index === (dataImageCarousel.length - 1));
   return (
     <div
       id="default-carousel"
