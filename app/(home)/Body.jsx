@@ -23,7 +23,7 @@ export default function Body({
     <>
       {data ? (
         <div>
-          <div className="container md:mx-auto">
+          <div className="lg:container md:mx-auto">
             {/* banner 1 */}
             <BannerIklan src={require('../../public/iklan_banner_satu.webp')} />
             {/* banner 2 */}
@@ -40,6 +40,8 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
+                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -73,6 +75,8 @@ export default function Body({
                             width={150}
                             height={150}
                             src={data.ImageURL ? data.ImageURL : ""}
+                            srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             alt=""
                             className="min-w-40 sm:min-w-28 pr-4 "
                           />
@@ -121,6 +125,8 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
+                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -174,6 +180,8 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
+                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
@@ -200,8 +208,8 @@ export default function Body({
 
               <div className="w-full h-full md:w-1/3"></div>
             </div>
-            <div className="container md:mx-auto">
-              <div className=" flex justify-between">
+            <div className="lg:container md:mx-auto">
+              <div className=" flex justify-between mx-4">
                 <h2 className="font-semibold">Foto</h2>
                 <h2 className="font-semibold">Lihat Semua</h2>
               </div>
@@ -217,6 +225,8 @@ export default function Body({
                         width={150}
                         height={150}
                         src={data.ImageURL ? data.ImageURL : ""}
+                        srcset={`${data.ImageURL} 600w, ${data.ImageURL} 1200w, ${data.ImageURL} 1800w`}
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt=""
                         className="min-w-40 sm:min-w-28 pr-4 "
                       />
