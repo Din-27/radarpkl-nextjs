@@ -42,7 +42,7 @@ export default function PagePost() {
     <>
       {!dataBerita && <ContentLoader />}
       {dataBerita && (
-        <div className="container md:mx-auto">
+        <div className="lg:container md:mx-auto">
           <div className="flex p-5 sm:flex-col">
             <div className="flex flex-col w-2/3 md:items-center ">
               <h1 className=" font-bold text-2xl sm:text-xl text-center">

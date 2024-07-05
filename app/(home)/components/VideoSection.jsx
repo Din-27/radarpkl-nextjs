@@ -2,8 +2,8 @@ const dataContentVideo = [1, 2, 3, 4, 5]
 
 export default function VideoSection({ title }) {
   return (
-    <div className="container md:mx-auto">
-      <div className=" flex justify-between">
+    <div className="lg:container md:mx-auto">
+      <div className=" flex justify-between mx-4">
         <h2 className="font-semibold">{title}</h2>
         <h2 className="font-semibold">Lihat Semua</h2>
       </div>

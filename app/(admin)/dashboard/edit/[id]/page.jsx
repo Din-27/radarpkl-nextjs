@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import SidebarDashboard from "../../components/SidebarDashboard";
 import { useEffect, useState } from "react";
 import supabase from "@/app/config/supabaseConfig";
+import { ImageConvert } from "@/app/fetch/ImageConvert";
 
 export default function EditPage() {
   const [Judul, setJudul] = useState("");

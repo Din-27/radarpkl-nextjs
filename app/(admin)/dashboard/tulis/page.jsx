@@ -3,6 +3,7 @@
 import { useState } from "react";
 import SidebarDashboard from "../components/SidebarDashboard";
 import supabase from "@/app/config/supabaseConfig";
+import { ImageConvert } from "@/app/fetch/ImageConvert";
 
 export default function TulisPage() {
   const [Judul, setJudul] = useState("");
@@ -67,7 +68,6 @@ export default function TulisPage() {
 
   const handleFilesUploadKedua = async (e) => {
     const image = e.target.files[0];
-
     const { data, error } = await supabase.storage
       .from("news-image")
       .upload(`/${image.name}`, image, {
