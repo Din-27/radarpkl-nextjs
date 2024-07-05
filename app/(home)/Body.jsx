@@ -27,7 +27,7 @@ export default function Body({
             {/* banner 1 */}
             <BannerIklan src={require('../../public/iklan_banner_satu.webp')} />
             {/* banner 2 */}
-            <BannerIklan src={require('../../public/iklan_banner_dua.webp')} />
+            <BannerIklan src='iklan_banner_dua' />
             <div className="flex justify-center p-5 sm:flex-col">
               <div>
                 <Carousel />
